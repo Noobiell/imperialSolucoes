@@ -1,0 +1,297 @@
+body{
+    padding-top: 120px;
+}
+.bgOnda{
+    background: url(../img/bg3.svg) no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.bgOnda2{
+    background: url(../img/bg3.svg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.separadorRow{
+    margin-bottom: 50px;
+}
+/*--- HEADER ---*/
+.bgCustom{
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffffff , #dab6ff, #fff);
+    border-image-slice: 1;
+    height: 120px;
+}
+.itemMenuHeaer{
+    color: #9e3ffd;
+}
+.btnLigarHeader{
+    background: #9e3ffd;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btnLigarHeader:hover{
+    background: #dab6ff;
+    color: #fff;
+}
+
+/*BANNER INICIAL*/
+.containerTextoInicio{
+    margin-top: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.containerTextoInicio h1{
+    font-size: 60px;
+    text-align: center;
+}
+.containerTextoInicio span{
+    font-size: 20px;
+    text-align: center;
+}
+.formConsultaCpfInicio{
+    text-align: center;
+    padding: 30px;
+}
+.btnConsultarInicio{
+    background: #9e3ffd;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+.tituloInicio{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*DICAS LIMPAR NOME*/
+.containerDicasInicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    gap: 15px;
+}
+.iconDica{
+    font-size: 160px;
+}
+/*NUMEROS SÃO NOSSO FORTE*/
+.bgNumeros{
+    background: #16163f;
+    padding: 60px 0px;
+}
+.containerNumeros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+}
+.itemNumero{
+    color: #fff;
+    max-width: 200px;
+    text-align: center;
+}
+.itemNumero h1{
+    font-size: 50px;
+}
+.itemNumero p{
+    font-size: 20px;
+}
+/*IMPERIAL SOLUÇÕES*/
+.bgImperial{
+    background: #fff;
+    padding: 70px 0px;
+}
+.tituloImperialSolucao{
+    font-size: 50px;
+    margin: 30px 0px;
+}
+.textoImperialSolucao{
+    font-size: 18px;
+    text-align: justify;
+    padding: 0px 40px;
+}
+
+/*EQUIPE*/
+.bgEquipe{
+    padding: 60px 0px;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+.containerEquipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.664);
+    height: 500px;
+}
+.containerEquipe p{
+    text-align: center;
+}
+.imgEquipe{
+    border-radius: 50%;
+}
+/*FOOTER*/
+.bgFooter{
+    padding: 30px 0px;
+    background: #2f2e2e;
+}
+.tituloFooter, .textoFooter{
+    color: #9e3ffd;
+}
+
+
+/*CONSULTA*/
+.ContainerFaleConosco{
+    padding: 30px;
+    font-size: 120%;
+    color: #2f2e2e;
+}
+.faleConosco{
+    font-size: 20px;
+}
+.bgInformacoes{
+    background: #9e3ffd;
+    color: #fff;
+}
+.containerInformacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.iconInformacoes{
+    font-size: 70px;
+}
+.btnWhatsapp{
+    background: #9e3ffd;
+    padding: 15px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700px;
+    border-radius: 30px;
+    transition: 1s;
+}
+.btnWhatsapp:hover{
+    color: #fff;
+    background: #16163f;
+}
+.containerConsulta{
+    padding: 30px;
+}
+
+/*------------- MEDIA QUERIE ----------*/
+@media screen and (max-width: 575px) {
+    /*HEADER*/
+    .lstBntLigar{
+        margin-top: 30px;
+    }
+    .containerTextoInicio{
+        max-width: 100%;
+    }
+
+    /*NUMEROS SÃO NOSSO FORTE*/
+    .containerNumeros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+@media  screen and (min-width: 576px) and (max-width: 767px) {
+    /*HEADER*/
+    .lstBntLigar{
+        margin-top: 30px;
+    }
+    .containerTextoInicio{
+        max-width: 100%;
+    }
+    /*NUMEROS SÃO NOSSO FORTE*/
+    .containerNumeros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+}
+@media  screen and (min-width: 768px) and (max-width: 991px) {
+    /*HEADER*/
+    .lstBntLigar{
+        margin-top: 30px;
+    }
+    .containerTextoInicio{
+        max-width: 100%;
+    }
+    /*NUMEROS SÃO NOSSO FORTE*/
+    .containerNumeros{
+        gap: 30px;
+    }
+    .itemNumero h1{
+        font-size: 30px;
+    }
+    .itemNumero p{
+        font-size: 15px;
+    }
+    /*EQUIPE*/
+    .containerEquipe{
+        justify-content: start;
+    }
+    .imgEquipe{
+        border-radius: 50%;
+        width: 100px;
+    }
+    
+}
+@media  screen and (min-width: 992px) and (max-width: 1199px) {
+    /*HEADER*/
+    .containerTextoInicio{
+        max-width: 100%;
+    }
+    /*NUMEROS SÃO NOSSO FORTE*/
+    .containerNumeros{
+        gap: 30px;
+    }
+    /*EQUIPE*/
+    .containerEquipe{
+        justify-content: start;
+        height: 520px;
+    }
+    
+}
+@media  screen and (min-width: 1200px) and (max-width: 1399px) {
+    /*HEADER*/
+    .containerTextoInicio{
+        max-width: 100%;
+    }
+    /*NUMEROS SÃO NOSSO FORTE*/
+    .containerNumeros{
+        gap: 30px;
+    }
+    /*EQUIPE*/
+    .containerEquipe{
+        justify-content: start;
+        height: 520px;
+    }
+    
+}
