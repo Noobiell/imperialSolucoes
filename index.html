@@ -47,6 +47,9 @@
                 <li class="nav-item">
                     <a class="itemMenuHeaer nav-link" href="consulta.html#contato">Contato</a>
                 </li>
+                <li class="nav-item">
+                  <a class="itemMenuHeaer nav-link" href="perguntasFrequentes.html">FAQ</a>
+              </li>
               </ul>
               <ul class="navbar-nav justify-content-end lstBntLigar">
                 <li class="nav-link"><a class="btnLigarHeader" href="https://api.whatsapp.com/send?phone=5511912075269&text=Bem%20vindos%20a%20Imperial">Ligar</a></li>
@@ -66,19 +69,19 @@
 
                 <form class="formConsultaCpfInicio">
                   <h5>Consulte seu CPF agora mesmo:</h5>
-                  <div class="form-floating">
-                    <input type="text" class="form-control formInicio" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+                  <div class="form-floating formInicio">
+                    <input type="text" class="form-control" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
                     <label for="cpf">Digite seu CPF aqui</label>
                   </div>
                   <button type="submit" class="btnConsultarInicio">Consultar</button>
                 </form>
-              </div><!--Fim ontainer texto-->
+              </div><!--Fim container texto-->
             </div><!--Fim col-md-->
           </div><!--Fim row-->
         </div><!--Fim container-->
 
         <div class="container" id="servicos">
-          <h2>Limpe seu nome veja como é fácil</h2>
+          <h2 class="text-center mb-3">Limpe seu nome veja como é fácil</h2>
           <div class="row">
             <div class="col-md-4">
               <div class="containerDicasInicio">
@@ -186,27 +189,40 @@
       <footer class="ccontainer-fluid bgFooter">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-ld-4">
+            <div class="col-md-6">
               <h2 class="tituloFooter">Imperial Soluções</h2>
               <p class="textoFooter">Uma Empresa de assessoria para que você entre com ações para limpar seu nome sem burocracia e com desconto total da dívida. Pensando nisso e trazendo a melhor solução para você, a IMPERIAL te ajuda a retirar esses apontamentos financeiros negativos, com o intuito de prover tranquilidade e confiança em momentos de conseguir novos empregos, gerar novos negócios ou algum outro benefício onde nome limpo é uma questão essencial.</p>
             </div>
-            <div class="col-md-6 cocl-lg-4">
+            <div class="col-md-3">
               <h2 class="tituloFooter">Páginas</h2>
+              <ul class="listaPaginasFooter">
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html">Inicio</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="consulta.html">Consulta</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="#servicos">Serviços</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="#depoimentos">Depoimentos</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="consulta.html#contato">Contato</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="perguntasFrequentes.html">FAQ</a></li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <h2 class="tituloFooter">Site seguro</h2>
-              <div class="emblemasSeg">
-                <img src="assets/img/emblemaSeg1.png" class="img-fluid">
-              </div>
-            </div>
+            <div class="col-md-3">
+              <h2 class="tituloFooter">Saiba mais em:</h2>
+              <ul class="listaPaginasFooter">
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html"><i class="fas fa-search"></i> Consulte Grátis</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="https://api.whatsapp.com/send?phone=5511912075269&text=Bem%20vindos%20a%20Imperial"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="mailto:imperialsolucoes.sup@gmail.com"><i class="fas fa-envelope"></i> imperialsolucoes.sup@gmail.com</a></li>
+              </ul>
+            </div><!--Fim col-->
+          </div><!--Fim row-->
+          <div class="row">
+            <h6 class="text-center txtEndereco mt-5">Imperial Soluções – São Paulo – Rua da Consolação, 1297 – Andar 1 – Cerqueira Cezar – CEP: 01301-000 – São Paulo – SP</h6>
           </div>
-        </div>
+        </div><!--Fim container-->
       </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <script>
-
+      var x = true;  
       $('#cpf').mask('000.000.000-00');
 
       function contador(id, numero, time){
@@ -232,20 +248,22 @@
 
         var exec = 0;
 
-        if(topoPagina <= divContador.offsetTop){
+        if(topoPagina <= divContador.offsetTop && x == true){
 
           contador('#pAtendidas', 255, 4);
           contador('#aFechados', 142, 8);
           contador('#cSatisfeitos', 91, 15);
           contador('#dResolvidas', 53, 20);
-
         }
 
       }
 
       window.addEventListener('scroll', function(){
 
-        animacao();
+        if(x == true){
+          animacao();
+          x = false;
+        }
 
       });
     </script>
