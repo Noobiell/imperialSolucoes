@@ -47,6 +47,9 @@
                 <li class="nav-item">
                     <a class="itemMenuHeaer nav-link" href="#contato">Contato</a>
                 </li>
+                <li class="nav-item">
+                  <a class="itemMenuHeaer nav-link" href="perguntasFrequentes.html">FAQ</a>
+              </li>
               </ul>
               <ul class="navbar-nav justify-content-end lstBntLigar">
                 <li class="nav-link"><a class="btnLigarHeader" href="https://api.whatsapp.com/send?phone=5511912075269&text=Bem%20vindos%20a%20Imperial">Ligar</a></li>
@@ -73,27 +76,27 @@
                         <div class="row">
                             <div class="mb-3">
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx">
+                                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
                             </div><!--Fim input-->
 
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome aqui">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome aqui">
                             </div><!--Fim input-->
 
                             <div class="mb-3">
                                 <label for="dataNasc" class="form-label">Data Nascimento</label>
-                                <input type="date" class="form-control" id="dataNasc">
+                                <input type="date" class="form-control" name="dtNasc" id="dataNasc">
                             </div><!--Fim input-->
 
                             <div class="mb-3">
                                 <label for="telefone" class="form-label">Telefone</label>
-                                <input type="email" class="form-control" id="telefone" placeholder="(00)00000-0000">
+                                <input type="text" class="form-control" name="tel" id="telefone" placeholder="(00)00000-0000">
                             </div><!--Fim input-->
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="nome@exemplo.com">
                             </div><!--Fim input-->
 
                             <button class="btnConsultarInicio">Consultar</button>
@@ -169,25 +172,41 @@
       <footer class="ccontainer-fluid bgFooter">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-ld-4">
+            <div class="col-md-6">
               <h2 class="tituloFooter">Imperial Soluções</h2>
               <p class="textoFooter">Uma Empresa de assessoria para que você entre com ações para limpar seu nome sem burocracia e com desconto total da dívida. Pensando nisso e trazendo a melhor solução para você, a IMPERIAL te ajuda a retirar esses apontamentos financeiros negativos, com o intuito de prover tranquilidade e confiança em momentos de conseguir novos empregos, gerar novos negócios ou algum outro benefício onde nome limpo é uma questão essencial.</p>
             </div>
-            <div class="col-md-6 cocl-lg-4">
+            <div class="col-md-3">
               <h2 class="tituloFooter">Páginas</h2>
+              <ul class="listaPaginasFooter">
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html">Inicio</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="consulta.html">Consulta</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html#servicos">Serviços</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html#depoimentos">Depoimentos</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="#contato">Contato</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="perguntasFrequentes.html">FAQ</a></li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <h2 class="tituloFooter">Site seguro</h2>
-              <div class="emblemasSeg">
-                <img src="assets/img/emblemaSeg1.png" class="img-fluid">
-              </div>
-            </div>
+            <div class="col-md-3">
+              <h2 class="tituloFooter">Saiba mais em:</h2>
+              <ul class="listaPaginasFooter">
+                <li class="itemPaginasFooter"><a class="linkFooter" href="index.html"><i class="fas fa-search"></i> Consulte Grátis</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="https://api.whatsapp.com/send?phone=5511912075269&text=Bem%20vindos%20a%20Imperial"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                <li class="itemPaginasFooter"><a class="linkFooter" href="mailto:imperialsolucoes.sup@gmail.com"><i class="fas fa-envelope"></i> imperialsolucoes.sup@gmail.com</a></li>
+              </ul>
+            </div><!--Fim col-->
+          </div><!--Fim row-->
+          <div class="row">
+            <h6 class="text-center txtEndereco mt-5">Imperial Soluções – São Paulo – Rua da Consolação, 1297 – Andar 1 – Cerqueira Cezar – CEP: 01301-000 – São Paulo – SP</h6>
           </div>
-        </div>
+        </div><!--Fim container-->
       </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+      <script>
+        $('#cpf').mask('000.000.000-00');
+        $('#telefone').mask('(00)00000-0000');
+      </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
